@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Customercontact</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="competency1">Cockpit Drill</string>
+    <string name="competency2">Moving Away</string>
+    <string name="competency3">Stopping</string>
+    <string name="competency4">Turning Left</string>
+    <string name="competency5">Turning Right</string>
+    <string name="competency6">T Junctions</string>
+    <string name="competency7">Crossroads</string>
+    <string name="competency8">Roundabouts</string>
+    <string name="competency9">Pedestrian Crossings</string>
+    <string name="competency10">Dual Carriageways</string>
+    <string name="competency11">One Way Streets</string>
+    <string name="competency12">Meeting Situations</string>
+    <string name="competency13">Defensive Driving</string>
+    <string name="competency14">Using Mirrors</string>
+    <string name="competency15">Emergency Stop</string>
+    <string name="competency16">Eco Driving</string>
+    <string name="competency17">Turn In The Road</string>
+    <string name="competency18">Parallel Park</string>
+    <string name="competency19">Left Reverse</string>
+    <string name="competency20">Bay Parking</string>
+    <string name="competency21">Show And tell</string>
+    <string name="competency22">Mock Tests</string>
+
+    <string name="radiobtn1">Facebook Friend</string>
+    <string name="radiobtn2">Theory Passed</string>
+    <string name="radiobtn3">Test Booked</string>
+
+    <string name="mainmenuButton1">Add Contact</string>
+    <string name="mainmenuButton2">Edit Contact</string>
+    <string name="mainmenuButton3">Contact Skills</string>
+
+    <string name="contactskillsButton1">Save</string>
+
+
+    <string name="backButton">Back</string>
+
+    <string name="btnClear">Clear</string>
+
+    <string name="btnSave">Save</string>
+
+    <string name="btnDelete">Delete</string>
+
+    <string name="btnCancel">Cancel</string>
+
+
+</resources>
