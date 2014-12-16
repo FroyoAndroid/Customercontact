@@ -5,30 +5,43 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string-array name="competency">
+        <item>Cockpit Drill</item>
+        <item>Moving Away</item>
+        <item>Stopping</item>
+        <item>Turning Left</item>
+        <item>Turning Right</item>
+        <item>T Junctions</item>
+        <item>Crossroads</item>
+        <item>Roundabouts</item>
+        <item>Pedestrian Crossings</item>
+        <item>Dual Carriageways</item>
+        <item>One Way Streets</item>
+        <item>Meeting Situations</item>
+        <item>Defensive Driving</item>
+        <item>Using Mirrors</item>
+        <item>Emergency Stop</item>
+        <item>Eco Driving</item>
+        <item>Turn In The Road</item>
+        <item>Parallel Park</item>
+        <item>Left Reverse</item>
+        <item>Bay Parking</item>
+        <item>Show And tell</item>
+        <item>Mock Tests</item>
+    </string-array>
 
-    <string name="competency1">Cockpit Drill</string>
-    <string name="competency2">Moving Away</string>
-    <string name="competency3">Stopping</string>
-    <string name="competency4">Turning Left</string>
-    <string name="competency5">Turning Right</string>
-    <string name="competency6">T Junctions</string>
-    <string name="competency7">Crossroads</string>
-    <string name="competency8">Roundabouts</string>
-    <string name="competency9">Pedestrian Crossings</string>
-    <string name="competency10">Dual Carriageways</string>
-    <string name="competency11">One Way Streets</string>
-    <string name="competency12">Meeting Situations</string>
-    <string name="competency13">Defensive Driving</string>
-    <string name="competency14">Using Mirrors</string>
-    <string name="competency15">Emergency Stop</string>
-    <string name="competency16">Eco Driving</string>
-    <string name="competency17">Turn In The Road</string>
-    <string name="competency18">Parallel Park</string>
-    <string name="competency19">Left Reverse</string>
-    <string name="competency20">Bay Parking</string>
-    <string name="competency21">Show And tell</string>
-    <string name="competency22">Mock Tests</string>
-
+    <string-array name="testPassed">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+    </string-array>
     <string name="radiobtn1">Facebook Friend</string>
     <string name="radiobtn2">Theory Passed</string>
     <string name="radiobtn3">Test Booked</string>

@@ -1,482 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<ScrollView
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
 
-
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
 
             <Button
+                android:id="@+id/backButton"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/backButton"
-                android:id="@+id/backButton" />
+                android:text="@string/backButton" />
         </LinearLayout>
 
         <EditText
+            android:id="@+id/txtFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtFullName"
             android:hint="Full Name" />
 
         <EditText
+            android:id="@+id/txtHouseStreet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtHouseStreet"
             android:hint="House And Street" />
 
         <EditText
+            android:id="@+id/txtTown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtTown"
             android:hint="Town" />
 
         <EditText
+            android:id="@+id/txtPostcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtPostcode"
-            android:hint="Postcode" />
+            android:hint="Postcode"
+            android:numeric="integer" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/txtContactNumber"
-            android:hint="Contact number" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact number"
+            android:numeric="integer" />
 
         <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:columnCount="2"
-            android:rowCount="1"
             android:id="@+id/gridLayoutRadioBtns"
-            android:textAlignment="center"
-            android:paddingLeft="50dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:paddingLeft="10dp"
+            android:rowCount="1"
+            android:textAlignment="center">
 
             <RadioButton
+                android:id="@+id/radiobtn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radiobtn1"
-                android:id="@+id/radiobtn1" />
+                android:text="@string/radiobtn1" />
 
             <RadioButton
+                android:id="@+id/radiobtn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radiobtn2"
-                android:id="@+id/radiobtn2" />
+                android:text="@string/radiobtn2" />
         </GridLayout>
 
         <GridLayout
+            android:id="@+id/gridLayoutRadioBtns2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:columnCount="5"
+            android:columnCount="11"
+            android:paddingLeft="10dp"
             android:rowCount="1"
-            android:id="@+id/gridLayoutRadioBtns2"
-            android:textAlignment="center"
-            android:paddingLeft="50dp">
+            android:textAlignment="center">
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/radiobtn3"
-                android:text="@string/radiobtn3" />
-
-            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="date"
-                android:ems="6"
-                android:id="@+id/editTextDateStarted"
-                android:layout_row="0"
-                android:layout_column="3"
-                android:hint="Date Started" />
+                android:text="@string/radiobtn3" />
+        </GridLayout>
 
+        <GridLayout
+            android:id="@+id/gridLayoutTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:paddingLeft="10dp"
+            android:textAlignment="center">
 
+            <TextView
+                android:id="@+id/testPassedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Passed (times)" />
+
+            <Spinner
+                android:id="@+id/testPassed"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Test Passed" />
+
+            <TextView
+                android:id="@+id/lessonHadLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lessons" />
+
+            <Spinner
+                android:id="@+id/lessonsHad"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Lesson Had" />
         </GridLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btnClear"
-                android:id="@+id/btnClear" />
+                android:text="@string/btnClear" />
 
             <Button
+                android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save Pupil"
-                android:id="@+id/btnSave" />
+                android:text="Save Pupil" />
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/linlayouthorCompetenciesCase"
-            android:visibility="visible">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/linlayverCompTxt"
-                android:layout_marginTop="2dp"
-                android:layout_marginLeft="2dp">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency1"
-                    android:id="@+id/txtviewCompetency1"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency2"
-                    android:id="@+id/txtviewCompetency2"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency3"
-                    android:id="@+id/txtviewCompetency3"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency4"
-                    android:id="@+id/txtviewCompetency4"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency5"
-                    android:id="@+id/txtviewCompetency5"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency6"
-                    android:id="@+id/txtviewCompetency6"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency7"
-                    android:id="@+id/txtviewCompetency7"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency8"
-                    android:id="@+id/txtviewCompetency8"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency9"
-                    android:id="@+id/txtviewCompetency9"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency10"
-                    android:id="@+id/txtviewCompetency10"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency11"
-                    android:id="@+id/txtviewCompetency11"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency12"
-                    android:id="@+id/txtviewCompetency12"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency13"
-                    android:id="@+id/txtviewCompetency13"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency14"
-                    android:id="@+id/txtviewCompetency14"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency15"
-                    android:id="@+id/txtviewCompetency15"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency16"
-                    android:id="@+id/txtviewCompetency16"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency17"
-                    android:id="@+id/txtviewCompetency17"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency18"
-                    android:id="@+id/txtviewCompetency18"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency19"
-                    android:id="@+id/txtviewCompetency19"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency20"
-                    android:id="@+id/txtviewCompetency20"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency21"
-                    android:id="@+id/txtviewCompetency21"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:text="@string/competency22"
-                    android:id="@+id/txtviewCompetency22"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/linlayverCompRating">
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency1" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency2" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency3" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency4" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency5" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency6" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency7" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency8" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency9" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency10" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency11" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency12" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency13" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency14" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency15" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency16" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency17" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency18" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency19" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency20" />
-
-                <RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency21" />
-
-		<RatingBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:id="@+id/ratingBarCompetency22" />
-
-
-            </LinearLayout>
-
-        </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/footerLayoutBox"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/footerLayoutBox">
+            android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/footer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/footer"
+                android:layout_marginTop="30dp"
                 android:text="This is the footer section"
-                android:textStyle="bold"
                 android:textSize="30sp"
-                android:layout_marginTop="30dp" />
+                android:textStyle="bold" />
         </LinearLayout>
 
 
