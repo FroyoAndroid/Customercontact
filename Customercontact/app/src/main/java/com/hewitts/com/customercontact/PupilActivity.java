@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.List;
  */
 public class PupilActivity extends Activity {
     Spinner testPassed,lessonHad;
+    Button back;
     List<String> lessonHadArray;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,16 @@ public class PupilActivity extends Activity {
         setContentView(R.layout.add_pupil);
         testPassed = (Spinner) findViewById(R.id.testPassed);
         lessonHad =(Spinner) findViewById(R.id.lessonsHad);
+        //back button
+        back = (Button) findViewById(R.id.backButton);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        //end of back button
+
         lessonHadArray = new ArrayList<String>();
         for(int i=0 ;i<=100;i++){
             lessonHadArray.add(""+i);
